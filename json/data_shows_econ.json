@@ -1,0 +1,689 @@
+[
+    {
+        "id": "1",
+        "title": "Industry",
+        "creator": "Mickey Down, Konrad Kay",
+        "release_date": "2020-11-09",
+        "cast": [
+            "Myha'la",
+            "Marisa Abela",
+            "Harry Lawtey"
+        ],
+        "production": "Bad Wolf, BBC, HBO",
+        "executive_producers": "Joel Collins, Mickey Down, Konrad Kay, Lachlan MacKinnon, Jane Tranter",
+        "seasons": 3,
+        "genre": [
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/Wj9KrM0JskA?si=dRLHG08ZYFIWsle4",
+        "storyline": "Industry is a drama series that follows a group of young graduates competing for permanent positions at Pierpoint & Co, a prestigious London investment bank. As they navigate the high-pressure world of finance, they face intense competition, moral dilemmas, and personal struggles. The show explores themes of power, ambition, and the dark side of corporate culture, blending workplace drama with personal relationships.",
+        "image": "../thumbnails/Industry_show.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Black Monday",
+        "creator": "Jordan Cahan, David Caspe",
+        "release_date": "2019-01-20",
+        "cast": [
+            "Don Cheadle",
+            "Andrew Rannells",
+            "Regina Hall"
+        ],
+        "production": "Point Grey Pictures, Shark vs. Bear, Showtime Networks",
+        "executive_producers": "Jordan Cahan, David Caspe",
+        "seasons": 3,
+        "genre": [
+            "Comedy"
+        ],
+        "trailer": "https://youtu.be/o2yEnwgvsts?si=674TDCw5W-t7jF-T",
+        "storyline": "Travel back to October 19, 1987 (aka Black Monday), the worst stock market crash in the history of Wall Street. The people responsible for the crash were a mystery - until now. This is the story of how a group of outsiders took on the blue blood, old boys' club of Wall Street and ended up crashing the world's largest financial system, a Lamborghini limousine, and the glass ceiling.",
+        "image": "../thumbnails/Black_Monday_show.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Dirty Money",
+        "creator": "Josh Adler",
+        "release_date": "2018-01-26",
+        "cast": [
+            "Matt Taibbi",
+            "Fisher Stevens",
+            "Alex Gibney"
+        ],
+        "production": "Jigsaw Productions",
+        "executive_producers": "Alex Gibney, Stacey Offman",
+        "seasons": 2,
+        "genre": [
+            "Documentary",
+            "Crime"
+        ],
+        "trailer": "https://youtu.be/CsplLiZHbj0?si=BSRo3G3tzp-whb6R",
+        "storyline": "Dirty Money is a documentary series that explores cases of corporate greed, corruption, and financial crimes around the world. Each episode investigates real-life scandals involving powerful corporations and individuals, uncovering fraud, money laundering, and unethical business practices.",
+        "image": "../thumbnails/Dirty_Money_show.jpeg"
+    },
+    {
+        "id": "4",
+        "title": "WeCrashed",
+        "creator": "Drew Crevello, Lee Eisenberg",
+        "release_date": "2022-03-18",
+        "cast": [
+            "Jared Leto",
+            "Anne Hathaway"
+        ],
+        "production": "Apple Studios",
+        "executive_producers": "Drew Crevello, Lee Eisenberg, Aaron Hart, Anne Hathaway, Natalie Sandy",
+        "seasons": 1,
+        "genre": [
+            "Biography",
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/UREIAoL0Spk?si=ohriMxlBeFmNoh4e",
+        "storyline": "WeCrashed is a drama miniseries based on the rise and fall of WeWork, one of the most valuable startups in the world. Starring Jared Leto as Adam Neumann and Anne Hathaway as his wife, Rebekah Neumann, the series follows the couple’s ambitious journey to turn WeWork into a global empire.",
+        "image": "../thumbnails/WeCrashed_show.jpg"
+    },
+    {
+        "id": "5",
+        "title": "The Playlist",
+        "creator": "Per-Olav Sorensen, Hallgrim Haug",
+        "release_date": "2022-10-13",
+        "cast": [
+            "Christian Hillborg",
+            "Edvin Endre",
+            "Severija Janusauskaite"
+        ],
+        "production": "Banijay Group, Yellow Bird",
+        "executive_producers": "Berna Levin",
+        "seasons": 1,
+        "genre": [
+            "Biography",
+            "Drama",
+            "Music"
+        ],
+        "trailer": "https://youtu.be/VtvfbGRDJbY?si=bXcaZweNfta3QoAy",
+        "storyline": "The series centers around young Swedish tech entrepreneur, Daniel Ek, and his partner Martin Lorentzon, who revolutionized a whole industry by offering free and legal streamed music around the world. It is a story about how hard convictions, unrelenting will, access and big dreams can help small players challenge the status quo.",
+        "image": "../thumbnails/The_Playlist_show.jpg"
+    },
+    {
+        "id": "6",
+        "title": "Super Pumped: The Battle for Uber",
+        "creator": "Brian Koppelman, David Levien",
+        "release_date": "2022-02-27",
+        "cast": [
+            "Joseph Gordon-Levitt",
+            "Kyle Chandler",
+            "Kerry Bishé"
+        ],
+        "production": "Showtime Networks",
+        "executive_producers": "Brian Koppelman, Beth Schacter, Stephen Schiff",
+        "seasons": 1,
+        "genre": [
+            "Biography",
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/VMP21LO0Guc?si=GWB9dNiDplFZG5iH",
+        "storyline": "Super Pumped: The Battle for Uber is a drama series that chronicles the rise of Uber and its controversial CEO, Travis Kalanick. The show focuses on the disruptive journey of the ride-sharing company, exploring the challenges Kalanick faced while building Uber into a global giant.",
+        "image": "../thumbnails/Super_Pumped_show.jpg"
+    },
+    {
+        "id": "7",
+        "title": "Succession",
+        "creator": "Jesse Armstrong",
+        "release_date": "2018-06-03",
+        "cast": [
+            "Nicholas Braun",
+            "Brian Cox",
+            "Kieran Culkin"
+        ],
+        "production": "Gary Sanchez Productions, Project Zeus, Hyperobject Industries",
+        "executive_producers": "Jesse Armstrong, Maeve Cullinane, Will Ferrell, Adam McKay, Kevin J. Messick, Frank Rich",
+        "seasons": 4,
+        "genre": [
+            "Comedy",
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/OzYxJV_rmE8?si=Z5DbZAyByEalQ4nj",
+        "storyline": "The Roy family controls the biggest media and entertainment company in the world. As they fight for control of the company, and each other, their lack of morals is exposed at every turn. This family has no redeeming character values, and neither does any person attached to them.",
+        "image": "../thumbnails/Succession_show.jpg"
+    },
+    {
+        "id": "8",
+        "title": "The Loudest Voice",
+        "creator": "Tom McCarthy, Alex Metcalf",
+        "release_date": "2019-06-30",
+        "cast": [
+            "Russell Crowe",
+            "Sienna Miller",
+            "Seth MacFarlane"
+        ],
+        "production": "Blumhouse Television",
+        "executive_producers": "Jason Blum, Liza Chasin, Russell Crowe, Jeremy Gold, Darian Heredia, Vinnie Malhotra, Padraic McKinley, Kari Skoglund, Marci Wiseman",
+        "seasons": 1,
+        "genre": [
+            "Biography",
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/Sm5zbB2FLbM?si=MdxnS2Bpd579fWnn",
+        "storyline": "This seven-part limited series from the bestselling book is about Roger Ailes, the founder of Fox News. To understand the events that led to the rise of the modern Republican party, one must understand Ailes.",
+        "image": "../thumbnails/The_Loudest_Voice_show.jpg"
+    },
+    {
+        "id": "9",
+        "title": "McMillions",
+        "creator": "James Lee Hernandez, Brian Lazarte",
+        "release_date": "2020-02-03",
+        "cast": [
+            "Chris Graham",
+            "Doug Mathews",
+            "Amy Murray"
+        ],
+        "production": "HBO",
+        "executive_producers": "Nancy Abraham, Archie Gips, Lisa Heller, Stephen Lavinson, Mark Wahlberg",
+        "seasons": 1,
+        "genre": [
+            "Documentary",
+            "Crime",
+            "History"
+        ],
+        "trailer": "https://youtu.be/KVKOWU8cZX8?si=HHlRN_SUzsmi2K6N",
+        "storyline": "McMillions is a documentary series that explores the true story of the McDonald’s Monopoly game scam that took place between the 1990s and early 2000s. The series follows how a group of criminals managed to steal high-value game pieces from the promotion and sell them for millions of dollars.",
+        "image": "../thumbnails/McMillions_show.jpg"
+    },
+    {
+        "id": "10",
+        "title": "Borgen",
+        "creator": "Adam Price",
+        "release_date": "2010-09-26",
+        "cast": [
+            "Sidse Babett Knudsen",
+            "Birgitte Hjort Sørensen",
+            "Søren Malling",
+            "Morten Hjulmand"
+        ],
+        "production": "Danmarks Radio",
+        "executive_producers": "Camilla Hammerich, Ingolf Gabold",
+        "seasons": 4,
+        "genre": [
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/OKduYvZ1TYo?si=Zvx_olYcNvMAoxjo",
+        "storyline": "This Danish drama series follows the intricate, complicated lives of the politicians, media spinners, and reporters who feed off their triumphs and failures in 'Borgen' (the Castle)--the nickname for Denmark's parliamentary building.",
+        "image": "../thumbnails/Borgen_show.jpg"
+    },
+    {
+        "id": "11",
+        "title": "Bad Banks",
+        "creator": "Christian Schwochow, Christian Zübert",
+        "release_date": "2018-02-22",
+        "cast": [
+            "Paula Beer",
+            "Barry Atsma",
+            "Désirée Nosbusch"
+        ],
+        "production": "Letterbox Filmproduktion, Iris Productions",
+        "executive_producers": "Günther Russ",
+        "seasons": 2,
+        "genre": [
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "trailer": "https://youtu.be/N3uLkyboKTk?si=C3Q2hkXepal6621e",
+        "storyline": "Ambitious Jana is confronted with the unscrupulous machinations of the world of finance. Her working life is determined by egotism, the pressure to succeed and misogyny. She soon has to decide how far she is prepared to go for her career.",
+        "image": "../thumbnails/Bad_Banks_show.jpg"
+    },
+    {
+        "id": "12",
+        "title": "Hanzawa Naoki",
+        "creator": "Katsuo Fukuzawa, Takayoshi Tanazawa",
+        "release_date": "2013-07-07",
+        "cast": [
+            "Masato Sakai",
+            "Aya Ueto",
+            "Mitsuhiro Oikawa"
+        ],
+        "production": "Tokyo Broadcasting System",
+        "executive_producers": "Kazutaka Iida, Hidenori Iyoda",
+        "seasons": 2,
+        "genre": [
+            "Comedy",
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/2ynYX48tYS0?si=tcDfN-u7Qvqa98AZ",
+        "storyline": "An idealistic banker takes on corruption and wrongdoing at his corporate bank. He must use his financial expertise, his instincts about human nature, and his skills of improvisation to try to stay one step ahead of his powerful enemies.",
+        "image": "../thumbnails/Hanzawa_Naoki_show.jpeg"
+    },
+    {
+        "id": "13",
+        "title": "Start-up",
+        "creator": "Choong Hwan Oh",
+        "release_date": "2020-10-17",
+        "cast": [
+            "Bae Suzy",
+            "Nam Joo-hyuk",
+            "Kim Seon-ho"
+        ],
+        "production": "History D&C Entertainment, Studio Dragon",
+        "executive_producers": "Sang Won Yoo",
+        "seasons": 1,
+        "genre": [
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "trailer": "https://youtu.be/BemKyzbLDDc?si=waEwAKDrjrz8du7L",
+        "storyline": "Young entrepreneurs aspiring to launch virtual dreams into reality compete for success and love in the cutthroat world of Korea's high-tech industry.",
+        "image": "../thumbnails/Start_up_show.jpg"
+    },
+    {
+        "id": "14",
+        "title": "El Presidente",
+        "creator": "Armando Bo",
+        "release_date": "2020-06-05",
+        "cast": [
+            "Andrés Parra",
+            "Karla Souza",
+            "Paulina Gaitan"
+        ],
+        "production": "Amazon Studios",
+        "executive_producers": "Sidonie Dumas, Juan de Dios Larraín, Pablo Larraín, Christophe Riandee, Agustín Sacanell, Vanessa Shapiro, Armando Bo, Lucas Rainelli",
+        "seasons": 2,
+        "genre": [
+            "Comedy",
+            "Drama",
+            "Sport"
+        ],
+        "trailer": "https://youtu.be/U6OhUXvtrpk?si=xTJcrVj-PTDlz_dF",
+        "storyline": "Explores the real-life conspiracy underlying the beginning of the 2015 FIFA Gate corruption scandal. The series covers how this house of cards fell apart because of Sergio Jadue, unknown B-league Chilean soccer club president.",
+        "image": "../thumbnails/El_Presidente_show.jpg"
+    },
+    {
+        "id": "15",
+        "title": "O Mecanismo",
+        "creator": "José Padilha",
+        "release_date": "2018-03-23",
+        "cast": [
+            "Caroline Abras",
+            "Selton Mello",
+            "Enrique Diaz"
+        ],
+        "production": "Zazen Produções",
+        "executive_producers": "Marcos Prado, Erik Barmack, José Padilha",
+        "seasons": 2,
+        "genre": [
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/80NBF4O-guM?si=TfuqQKeyS3UwqwGp",
+        "storyline": "Dramatic fiction series loosely inspired by an investigation of corruption in Brazil's private and state oil companies and construction companies.",
+        "image": "../thumbnails/O_Mecanismo_show.jpg"
+    },
+    {
+        "id": "16",
+        "title": "The Business",
+        "creator": "Phil Price",
+        "release_date": "2006-10-04",
+        "cast": [
+            "Kathleen Robertson",
+            "Rob Deleeuw",
+            "Nicolas Wright",
+            "Trevor Hayes",
+            "James A. Woods"
+        ],
+        "production": "Philms Pictures",
+        "executive_producers": "-",
+        "seasons": "2 seasons (2006 - 2007)",
+        "genre": [
+            "Comedy"
+        ],
+        "trailer": "",
+        "storyline": "The plot of the show centres on Vic Morgan (Rob Deleeuw), an adult film director of a low-budget softcore pornographic series similar to Girls Gone Wild. He attempts to become a legitimate film maker after having converted to Judaism to be successful in the entertainment industry. Season one depicts the production of his first independent film and the difficulties along the way with an undisciplined production staff, poorly skilled actors, and an eccentric Japanese investor. Season two follows the company following the success of its first film as they search for a follow-up project.",
+        "image": "../thumbnails/The_Business_show.jpg"
+    },
+    {
+        "id": "17",
+        "title": "Billions",
+        "creator": "Brian Koppelman David Levien Andrew Ross Sorkis",
+        "release_date": "2016-01-17",
+        "cast": [
+            "Damian Lewis",
+            "Paul Giamatti",
+            "Maggie Siff",
+            "Malin Åkerman",
+            "Toby Leonard Moore",
+            "David Costabile",
+            "Condola Rashād"
+        ],
+        "production": "Best Available! TBTF Productions Inc.",
+        "executive_producers": "Brian Koppelman David Levien Andrew Ross Sorkin Neil Burger",
+        "seasons": "1 season (2016 - …)",
+        "genre": [
+            "Drama"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=_raEUMLL-ZI",
+        "storyline": "Billions is an American television drama series created by Brian Koppelman, David Levien, and Andrew Ross Sorkin, starring Paul Giamatti and Damian Lewis premiering on Showtime. The series is loosely based on the activities of crusading federal prosecutor of financial crimes Preet Bharara, the U.S. Attorney for the Southern District of New York, and his legal battles with hedge fund manager Steve Cohen of SAC Capital.",
+        "image": "../thumbnails/Billions_show.jpg"
+    },
+    {
+        "id": "18",
+        "title": "Bull",
+        "creator": "Phil McGraw Paul Attanasio",
+        "release_date": "2016-09-20",
+        "cast": [
+            "Michael",
+            "Weatherly",
+            "Freddy Rodriguez",
+            "Geneva Carr",
+            "Christopher Jackson",
+            "Jaime Lee Kirchner",
+            "Annabelle Attanasio"
+        ],
+        "production": "Amblin Television Atelier Paul Attanasio Stage 29 Productions CBS Television Studios",
+        "executive_producers": "Paul Attanasio Phil McGraw Jay McGraw Justin Falvey Darryl Frank Mark Goffman Steven Spielberg Rodrigo Garcia",
+        "seasons": "1 season (2016 - …)",
+        "genre": [
+            "Drama"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=cmHeKAF6vwI",
+        "storyline": "Bull is an American drama series created by Michael S. Chernuchin. It was TNT's first original series, and was cancelled in the middle of Season 1. The show's name is in reference to the bull market, but the airing of the series coincided with the dot-com bubble crash that turned what had until then been a bull economy in the United States into a bear market. Bull is about a group of Wall Street investment bankers that risk everything to break away from an established firm and start their own company. Leading the way is Robert \"Ditto\" Roberts III, the brilliant grandson of the founder of their former company who must betray his family heritage in order to stake a claim to his own life. His partners - Corey Granville, Marty Decker, Carson Boyd, Alison Jeffers and Marissa Rufo - each with a separate agenda, risk losing everything to join him in the new rival start-up firm that will answer the call of the new economy. With no financing, no clients and the rivalry of every player in town, the team's dreams rest on Hunter Lasky, the hard-hitting negotiations shark who has the potential to give the renegade team of Wall Street brokers the edge and legitimacy they need to succeed in the competitive world of high finance.",
+        "image": "../thumbnails/Bull_show.jpg"
+    },
+    {
+        "id": "19",
+        "title": "Dallas",
+        "creator": "David Jacobs",
+        "release_date": "1978-04-02",
+        "cast": [
+            "Barbara Bel",
+            "Geddes",
+            "Jim Davis",
+            "Patrick Duffy",
+            "Linda Gray",
+            "Larry Hagman",
+            "Steve Kanaly",
+            "Victoria Principal",
+            "Charlene Tilton",
+            "Ken Kercheval",
+            "Susan Howard",
+            "…"
+        ],
+        "production": "Lorimar Productions (1978–86) Lorimar-Telepictures (1986–88) Lorimar Television (1988–91)",
+        "executive_producers": "Philip Capice (season 1–9) Lee Rich (season 1–3) Leonard Katzman (season 10–14) Larry Hagman (season 12–14) Ken Horton (co-executive producer season 13–14)",
+        "seasons": "14 seasons (1978 - 1991)",
+        "genre": [
+            "Drama",
+            "Romance"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=iPkQImC3VOw",
+        "storyline": "Popular evening 'soap-opera' style television drama. The show was set in Dallas and chronicled the exploits of wealthy Texas oil millionaires. Many of the plots revolved around shady business dealings and dysfunctional family dynamics.",
+        "image": "../thumbnails/Dallas_show.jpg"
+    },
+    {
+        "id": "21",
+        "title": "Dynasty",
+        "creator": "Richard & Esther Shapiro",
+        "release_date": "1981-01-12",
+        "cast": [
+            "John",
+            "Forsythe",
+            "Linda Evans",
+            "Joan Collins",
+            "John James",
+            "Gordon Thomson",
+            "Pamela Bellwood",
+            "Pamela Sue Martin",
+            "Al Corley",
+            "Jack Coleman",
+            "Michael Nader",
+            "Heather Locklear",
+            "…"
+        ],
+        "production": "Aaron Spelling Productions",
+        "executive_producers": "Aaron Spelling Douglas S. Cramer Richard & Esther Shapiro",
+        "seasons": "9 seasons (1981 - 1989)",
+        "genre": [
+            "Drama",
+            "Romance"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=oftDrdDBTkw",
+        "storyline": "The saga of a wealthy Denver family in the oil business: Blake Carrington, the patriarch; Krystle, his former secretary and wife; his children: Adam, lost in childhood after a kidnapping; Fallon, pampered and spoiled; Steven, openly gay; and Amanda, hidden from him by his ex-wife, the conniving Alexis. Most of the show features the conflict between 2 large corporations, Blake's Denver Carrington and Alexis' ColbyCo.",
+        "image": "../thumbnails/Dynasty_show.jpg"
+    },
+    {
+        "id": "22",
+        "title": "Halt and Catch Fire",
+        "creator": "Christopher Cantwell Christopher C. Rogers",
+        "release_date": "2014-06-01",
+        "cast": [
+            "Lee",
+            "Pace",
+            "Scoot McNairy",
+            "Mackenzie Davis",
+            "Kerry Bishé",
+            "Toby Huss",
+            "Aleksa Palladino"
+        ],
+        "production": "AMC Studios",
+        "executive_producers": "Christopher Cantwell Christopher C. Rogers Jonathan Lisco Mark Johnson Melissa Bernstein",
+        "seasons": "3 seasons (2014 - 2016)",
+        "genre": [
+            "Drama"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=7KeQC_JQfhE",
+        "storyline": "Set in the 1980s, this series dramatizes the personal computing boom through the eyes of a visionary, an engineer and a prodigy whose innovations directly confront the corporate behemoths of the time. Their personal and professional partnership will be challenged by greed and ego while charting the changing culture in Texas' Silicon Prairie.",
+        "image": "../thumbnails/Halt_and_Catch_Fire_show.jpg"
+    },
+    {
+        "id": "23",
+        "title": "Kardes Payi",
+        "creator": "Selcuk Aydemir Caglar Yurt Onay Durgun Murat Kaman Emrah Kaman",
+        "release_date": "2014-02-13",
+        "cast": [
+            "Ahmet",
+            "Kural",
+            "Murat Cemcir",
+            "Seda Bakan"
+        ],
+        "production": "NTC Medya",
+        "executive_producers": "-",
+        "seasons": "2 seasons (2014 - 2015)",
+        "genre": [
+            "Comedy",
+            "Drama",
+            "Family"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=PJg0KoQIy48",
+        "storyline": "Kardes Payi is a Turkish television sitcom produced by NTC Medya. The show is about two brothers (Ahmet Kural and Murat Cemcir) and a sister (Seda Bakan). The two brothers are plumbers, however they are trying to invent a motor, working with water so they could make the world a better place.",
+        "image": "../thumbnails/Kardes_Payi_show.jpg"
+    },
+    {
+        "id": "24",
+        "title": "Keynes vs Hayek, a Fake Debate?",
+        "creator": "John Papola Russ Roberts",
+        "release_date": "2014-10-15",
+        "cast": [
+            "Billy",
+            "Scafuri",
+            "Adam Lustick"
+        ],
+        "production": "Emergent Order",
+        "executive_producers": "-",
+        "seasons": "2 seasons",
+        "genre": [
+            "Documentary"
+        ],
+        "trailer": "",
+        "storyline": "John Maynard Keynes and Friedrich August Hayek were two prominent economists of the Great Depression era with sharply contrasting views. The arguments they had in the 1930s have been revived in the wake of the latest global financial crisis.",
+        "image": "../thumbnails/Keynes_vs_Hayek,_a_Fake_Debate_show.jpg"
+    },
+    {
+        "id": "25",
+        "title": "Mad Man",
+        "creator": "Matthew Weiner",
+        "release_date": "2007-07-19",
+        "cast": [
+            "Jon",
+            "Hamm",
+            "Elisabeth Moss",
+            "Vincent Kartheiser",
+            "January Jones",
+            "Christina Hendricks",
+            "Bryan Batt",
+            "Michael Gladis",
+            "Aaron Staton",
+            "Rich Sommer",
+            "…"
+        ],
+        "production": "Weiner Bros. Silvercup Studios Lionsgate Television @radical.media (pilot only) AMC Studios",
+        "executive_producers": "Matthew Weiner Scott Hornbacher Andre Jacquemetton Maria Jacquemetton Janet Leahy",
+        "seasons": "7 seasons (2007 - 2015)",
+        "genre": [
+            "Drama"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=m7NChV93LBw",
+        "storyline": "The professional and personal lives of those who work in advertising on Madison Avenue - self-coined \"mad men\" - in the 1960s are presented. The stories focus on those at one of the avenue's smaller firms, Sterling Cooper, and its various incarnations over the decade. At the heart of these stories is Donald Draper, the creative genius of the company. That professional creative brilliance belies the fact of a troubled childhood, one that he would rather forget and not let anyone know about except for a select few, but one that shaped who he is as an adult and as an ad man in the need not only to sell products but sell himself to the outside world. His outward confidence also masks many insecurities as evidenced through his many vices, such as excessive smoking, drinking and womanizing - the latter despite being a family man - and how he deals with the aftermath of some of the negative aspects of his life.",
+        "image": "../thumbnails/Mad_Man_show.jpg"
+    },
+    {
+        "id": "26",
+        "title": "Mafiosa",
+        "creator": "Hugues Pagan Eric Rochant Pierre Leccia Louis Choquette",
+        "release_date": "2006-12-12",
+        "cast": [
+            "Hélène Fillières,  Thierry Neuvic,  Phareelle Onoyan"
+        ],
+        "production": "Canal+",
+        "executive_producers": "-",
+        "seasons": "5 seasons (2006 - 2014)",
+        "genre": [
+            "Crime",
+            "Drama"
+        ],
+        "trailer": "https://www.bing.com/videos/search?q=mafiosa+trailer&&view=detail&mid=EBDCD15D73417BB26201EBDCD15D73417BB26201&FORM=VRDGAR",
+        "storyline": "By the will of her murdered uncle, the Corsican mafia boss François Paoli, the clan's lawyer, Sandra Paoli (Hélène Fillières), suddenly finds herself the head of the clan. Backed up by her brother, Jean-Michel Paoli, she learns how to assert herself in a very violent world and becomes a respected, but also hated, woman in a world of men, murder and criminality. Taking over the reign of violence, money, drug and sex in a world of it's own : Corsica.",
+        "image": "../thumbnails/Mafiosa_show.jpg"
+    },
+    {
+        "id": "27",
+        "title": "Misaeng (An Incomplete Life)",
+        "creator": "Jung Yoon-jung",
+        "release_date": "2014-10-17",
+        "cast": [
+            "Yim",
+            "Si-wan",
+            "Lee Sung-min",
+            "Kang So-ra",
+            "Kang Ha-neul",
+            "Byun Yo-han",
+            "Kim Dae-myung",
+            "Shin Eun-jung",
+            "Park Hae-joon"
+        ],
+        "production": "Number 3 Pictures",
+        "executive_producers": "Kim Mi-na Lee Chan-ho",
+        "seasons": "1 season (2014)",
+        "genre": [
+            "Drama",
+            "Comedy"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=uzGfpaeZejM",
+        "storyline": "nce he was a child, the board game baduk has been everything to Jang Geu-rae. But when he fails at achieving his dream of becoming a professional baduk player, Geu-rae must leave his isolated existence and enter the real world armed with nothing but a high school equivalency exam on his resume. Through an acquaintance's recommendation, he gets hired as an intern at One International, a large trading company. There, Geu-rae meets his boss, manager Oh Sang-shik, who's a workaholic and has a warm personality; fellow intern Ahn Young-yi, who attracts her colleagues' ire because of her impressive educational credentials and by being extremely competent at any task; and Jang Baek-gi, a geeky co-worker whose anxious nature masks his inner ambition. Geu-rae learns to navigate and adapt to corporate culture, with baduk as his guide.",
+        "image": "../thumbnails/Misaeng_(An_Incomplete_Life)_show.jpg"
+    },
+    {
+        "id": "28",
+        "title": "Mr. Robot",
+        "creator": "Sam Esmail",
+        "release_date": "2015-05-27",
+        "cast": [
+            "Rami",
+            "Malek",
+            "Christian Slater",
+            "Carly Chaikin",
+            "Portia Doubleday",
+            "Martin Wallström",
+            "Sunita Mani",
+            "Michel Gill"
+        ],
+        "production": "Universal Cable Productions",
+        "executive_producers": "Sam Esmail Steve Golin Chad Hamilton",
+        "seasons": "1 season (2015 - ...)",
+        "genre": [
+            "Crime",
+            "Drama"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=U94litUpZuc",
+        "storyline": "Elliot Alderson is a young cyber-security engineer living in New York, who assumes the role of a vigilante hacker by night. Elliot meets a mysterious anarchist known as «Mr. Robot» who recruits Elliot to join his team of hackers, «fsociety». Elliot, who has a social anxiety disorder and connects to people by hacking them, is intrigued but uncertain if he wants to be part of the group. The show follows Mr. Robot's attempts to engage Elliot in his mission to destroy the corporation Elliot is paid to protect. Compelled by his personal beliefs, Elliot struggles to resist the chance to take down the multinational CEOs that are running (and ruining) the world.",
+        "image": "../thumbnails/Mr._Robot_show.jpg"
+    },
+    {
+        "id": "29",
+        "title": "Narcos",
+        "creator": "Chris Brancato Carlo Bernard Doug Miro",
+        "release_date": "2015-08-28",
+        "cast": [
+            "Wagner",
+            "Moura",
+            "Boyd Holbrook",
+            "Pedro Pascal"
+        ],
+        "production": "Gaumont International Television",
+        "executive_producers": "Chris Brancato Katie O'Connell Carlo Bernard Doug Miro",
+        "seasons": "1 season (2015 - ...)",
+        "genre": [
+            "Biography",
+            "Crime",
+            "Drama"
+        ],
+        "trailer": "https://youtu.be/U7elNhHwgBU",
+        "storyline": "Narcos tells the story of Pablo Escobar, who rose from the extremely mean streets of Medellín, Colombia, to control the largest drug empire of all time, and the story of the American DEA agents struggling to defeat him.",
+        "image": "../thumbnails/Narcos_show.jpg"
+    },
+    {
+        "id": "30",
+        "title": "Silicon Valley",
+        "creator": "Mike Judge John Altschuler Dave Krinsky",
+        "release_date": "2014-04-06",
+        "cast": [
+            "Thomas",
+            "Middleditch",
+            "T. J. Miller",
+            "Josh Brener",
+            "Martin Starr",
+            "Kumail Nanjiani",
+            "Christopher Evan Welch",
+            "Amanda Crew",
+            "Zach Woods",
+            "Matt Ross",
+            "Suzanne Cryer",
+            "Jimmy O. Yang"
+        ],
+        "production": "Judgemental Films Altschuler Krinsky Works Alec Berg Inc. 3 Arts Entertainment HBO Entertainment",
+        "executive_producers": "Mike Judge Alec Berg John Altschuler Dave Krinsky Michael Rotenberg Tom Lassall",
+        "seasons": "4 seasons (2014 - ...)",
+        "genre": [
+            "Comedy"
+        ],
+        "trailer": "https://www.youtube.com/watch?v=69V__a49xtw",
+        "storyline": "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. A comedy partially inspired by Mike Judge's own experiences as a Silicon Valley engineer in the late 1980s.",
+        "image": "../thumbnails/Silicon_Valley_show.jpg"
+    },
+    {
+        "id": "31",
+        "title": "Wall Street Warriors",
+        "creator": "Scott J. Gill Sean Skelton",
+        "release_date": "2009-02-18",
+        "cast": [
+            "Brett",
+            "Hickey",
+            "Laetitia Vaval",
+            "Mark Jawdoszyn"
+        ],
+        "production": "Radius Productions",
+        "executive_producers": "-",
+        "seasons": "3 seasons (2006 - 2009)",
+        "genre": [
+            "Documentary"
+        ],
+        "trailer": "https://www.youtube.com/channel/UCDWDuzt1WOxAZ7bb5LZ5LiA/videos",
+        "storyline": "An HD documentary series examining the extreme power and intense competition that defines Wall Street, seen through the eyes of those who thrive there.",
+        "image": "../thumbnails/Wall_Street_Warriors_show.jpg"
+    }
+]

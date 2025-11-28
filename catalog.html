@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tec'N'Cool - Catalog">
+    <title>Catalog | Tec'N'Cool</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <div class="catalog-particles-background">
+        <div class="catalog-particles-container" id="catalogParticlesContainer"></div>
+    </div>
+
+    <!-- Header - Same as index.html -->
+    <header class="header" id="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-link" aria-label="CEI Homepage">
+                        <img src="imgs/Logo_CEI.jpg" alt="CEI Logo" class="logo-cei">
+                    </a>
+                    <a href="index.html" class="logo-link" aria-label="Tec'N'Cool Homepage">
+                        <img src="imgs/logo_w_lettering_curto2.png" alt="Tec'N'Cool Logo" class="logo-main">
+                    </a>
+                    <a href="index.html" class="logo-link" aria-label="ISCAP P.Porto Homepage">
+                        <img src="imgs/LogoISCAPPP2.png" alt="ISCAP P.Porto Logo" class="logo-iscap">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links" id="navLinks">
+                    <a href="catalog.html?type=all&category=economy" class="nav-link" data-translate="economy">Economy & Culture</a>
+                    <a href="catalog.html?type=all&category=environment" class="nav-link" data-translate="environment">Environment & Culture</a>
+                    <a href="catalog.html?type=all&category=law" class="nav-link" data-translate="law">Law & Culture</a>
+                    <a href="index.html#about" class="nav-link" data-translate="about">About</a>
+                </div>
+
+                <div class="nav-controls">
+                    <!-- Language Selector Dropdown -->
+                    <div class="language-dropdown" role="group" aria-label="Language selection">
+                        <button class="lang-dropdown-btn" id="langDropdownBtn" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon" id="currentFlag">
+                            <span class="lang-text" id="currentLang">EN</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu" role="menu">
+                            <button class="lang-option" onclick="changeLanguage('en')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
+                                <span>English</span>
+                            </button>
+                            <button class="lang-option" onclick="changeLanguage('pt')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/pt.png" alt="Português" class="flag-icon">
+                                <span>Português</span>
+                            </button>
+                            <button class="lang-option" onclick="changeLanguage('fr')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+                                <span>Français</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="catalog-main">
+        <div class="catalog-container">
+            <!-- Page Header -->
+            <div class="page-header fade-in-element">
+                <h1 class="catalog-title">Cultural Catalog</h1>
+            </div>
+
+            <!-- Category Selector -->
+            <div class="category-selector fade-in-element" style="animation-delay: 0.1s">
+                <div class="selector-row">
+                    <div class="selector-group">
+                        <label class="selector-label">Category:</label>
+                        <select id="categorySelect" class="category-select">
+                            <option value="all">All Categories</option>
+                            <option value="economy">💼 Economy & Culture</option>
+                            <option value="environment">🌍 Environment & Culture</option>
+                            <option value="law">⚖️ Law & Culture</option>
+                        </select>
+                    </div>
+
+                    <div class="selector-group">
+                        <label class="selector-label">Type:</label>
+                        <select id="typeSelect" class="type-select">
+                            <option value="all">All Types</option>
+                            <option value="films">🎬 Films</option>
+                            <option value="shows">📺 TV Shows</option>
+                            <option value="books">📚 Books</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search and Filters -->
+            <div class="controls-section fade-in-element" style="animation-delay: 0.2s">
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input"
+                        placeholder="Search by title, director, actor, author..."
+                    >
+                </div>
+
+                <!-- Filters Row -->
+                <div class="filters-row">
+                    <select id="genreFilter" class="filter-select">
+                        <option value="">All Genres</option>
+                    </select>
+
+                    <select id="yearFilter" class="filter-select">
+                        <option value="">All Years</option>
+                    </select>
+
+                    <select id="sortFilter" class="filter-select">
+                        <option value="titleAsc">Title (A-Z)</option>
+                        <option value="titleDesc">Title (Z-A)</option>
+                        <option value="dateDesc">Newest First</option>
+                        <option value="dateAsc">Oldest First</option>
+                    </select>
+
+                    <button id="clearFiltersBtn" class="clear-btn">Clear All</button>
+                </div>
+            </div>
+
+            <!-- Results Info -->
+            <div class="results-bar fade-in-element" style="animation-delay: 0.3s">
+                <span id="resultsCount" class="results-text">Loading...</span>
+            </div>
+
+            <!-- Items Gallery -->
+            <div class="catalog-gallery" id="itemGallery">
+                <!-- Loading State -->
+                <div class="loading-wrapper">
+                    <div class="spinner"></div>
+                    <p>Loading content...</p>
+                </div>
+            </div>
+
+            <!-- No Results -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>No results found</h3>
+                <p>Try adjusting your filters or search terms</p>
+            </div>
+
+            <!-- Pagination with Page Jump -->
+            <div class="pagination" id="pagination" style="display: none;">
+                <button class="pagination-btn" id="prevBtn" disabled>
+                    <span>←</span>
+                    <span>Previous</span>
+                </button>
+                
+                <div class="pagination-center">
+                    <div class="pagination-info">
+                        <span>Page <strong id="currentPage">1</strong> of <strong id="totalPages">1</strong></span>
+                    </div>
+                    
+                    <div class="page-jump">
+                        <label for="pageJumpInput" class="page-jump-label">Go to:</label>
+                        <input 
+                            type="number" 
+                            id="pageJumpInput" 
+                            class="page-jump-input" 
+                            min="1" 
+                            placeholder="#"
+                        >
+                        <button id="pageJumpBtn" class="page-jump-btn">Go</button>
+                    </div>
+                </div>
+                
+                <button class="pagination-btn" id="nextBtn">
+                    <span>Next</span>
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Tec'N'Cool Project</p>
+                <p class="footer-text">CEI & ISCAP | Politécnico do Porto</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <svg class="scroll-progress-ring" width="60" height="60">
+            <circle class="scroll-progress-ring-bg" cx="30" cy="30" r="26"></circle>
+            <circle class="scroll-progress-ring-circle" cx="30" cy="30" r="26"></circle>
+        </svg>
+        <span class="scroll-arrow-up">↑</span>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

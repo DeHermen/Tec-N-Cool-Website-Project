@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tec'N'Cool - Item Details">
+    <title>Details | Tec'N'Cool</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header - Same as index.html -->
+    <header class="header" id="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-link" aria-label="CEI Homepage">
+                        <img src="imgs/Logo_CEI.jpg" alt="CEI Logo" class="logo-cei">
+                    </a>
+                    <a href="index.html" class="logo-link" aria-label="Tec'N'Cool Homepage">
+                        <img src="imgs/logo_w_lettering_curto2.png" alt="Tec'N'Cool Logo" class="logo-main">
+                    </a>
+                    <a href="index.html" class="logo-link" aria-label="ISCAP P.Porto Homepage">
+                        <img src="imgs/LogoISCAPPP2.png" alt="ISCAP P.Porto Logo" class="logo-iscap">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html#economy-section" class="nav-link" data-translate="economy">Economy & Culture</a>
+                    <a href="index.html#environment-section" class="nav-link" data-translate="environment">Environment & Culture</a>
+                    <a href="index.html#law-section" class="nav-link" data-translate="law">Law & Culture</a>
+                    <a href="index.html#about" class="nav-link" data-translate="about">About</a>
+                </div>
+
+                <div class="nav-controls">
+                    <!-- Language Selector Dropdown -->
+                    <div class="language-dropdown" role="group" aria-label="Language selection">
+                        <button class="lang-dropdown-btn" id="langDropdownBtn" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon" id="currentFlag">
+                            <span class="lang-text" id="currentLang">EN</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu" role="menu">
+                            <button class="lang-option" onclick="changeLanguage('en')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
+                                <span>English</span>
+                            </button>
+                            <button class="lang-option" onclick="changeLanguage('pt')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/pt.png" alt="Português" class="flag-icon">
+                                <span>Português</span>
+                            </button>
+                            <button class="lang-option" onclick="changeLanguage('fr')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+                                <span>Français</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="details-main">
+        <div class="details-container">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol id="breadcrumbList">
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="#" id="breadcrumb-category">Category</a></li>
+                    <li aria-current="page" id="breadcrumb-item">Loading...</li>
+                </ol>
+            </nav>
+
+            <!-- Back button -->
+            <button onclick="window.history.back()" class="back-button">
+                <span>←</span>
+                <span data-translate="back">Back</span>
+            </button>
+
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state">
+                <div class="spinner"></div>
+                <p data-translate="loading">Loading...</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorState" class="error-state hidden">
+                <h2 data-translate="error_title">Item not found</h2>
+                <p data-translate="error_message">The requested item could not be found.</p>
+                <a href="index.html" class="btn-primary">
+                    <span data-translate="back_home">Back to Home</span>
+                </a>
+            </div>
+
+            <!-- Details Content -->
+            <div id="detailsContent" class="details-content hidden">
+                <div class="details-grid">
+                    <!-- Left Column: Poster/Cover -->
+                    <div class="details-poster">
+                        <img id="item-image" src="" alt="" class="poster-image">
+                        
+                        <!-- Share buttons -->
+                        <div class="share-section">
+                            <h3 data-translate="share">Share</h3>
+                            <div class="share-buttons">
+                                <button class="share-btn" onclick="shareItem('facebook')" aria-label="Share on Facebook">
+                                    <span>📘</span>
+                                    <span>Facebook</span>
+                                </button>
+                                <button class="share-btn" onclick="shareItem('twitter')" aria-label="Share on Twitter">
+                                    <span>🐦</span>
+                                    <span>Twitter</span>
+                                </button>
+                                <button class="share-btn" onclick="copyLink()" aria-label="Copy link">
+                                    <span>🔗</span>
+                                    <span data-translate="copy_link">Copy Link</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Information -->
+                    <div class="details-info">
+                        <h1 id="item-title" class="details-title"></h1>
+
+                        <!-- For Films/Shows -->
+                        <div id="filmShowInfo" class="info-section hidden">
+                            <div class="info-row">
+                                <span class="info-label" data-translate="director">Director:</span>
+                                <span id="item-director" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label" data-translate="release_date">Release Date:</span>
+                                <span id="item-release" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label" data-translate="genre">Genre:</span>
+                                <span id="item-genre" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label" data-translate="cast">Cast:</span>
+                                <span id="item-cast" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label" data-translate="production">Production:</span>
+                                <span id="item-production" class="info-value"></span>
+                            </div>
+                            <!-- Trailer link -->
+                            <a id="item-trailer" href="#" target="_blank" rel="noopener noreferrer" class="btn-trailer hidden">
+                                <span>🎬</span>
+                                <span data-translate="watch_trailer">Watch Trailer</span>
+                            </a>
+                        </div>
+
+                        <!-- For Books -->
+                        <div id="bookInfo" class="info-section hidden">
+                            <div class="info-row">
+                                <span class="info-label" data-translate="author">Author:</span>
+                                <span id="item-author" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label" data-translate="publication_year">Publication Year:</span>
+                                <span id="item-publication-year" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label" data-translate="language">Language:</span>
+                                <span id="item-language" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label" data-translate="publisher">Publisher:</span>
+                                <span id="item-publisher" class="info-value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">ISBN:</span>
+                                <span id="item-isbn" class="info-value"></span>
+                            </div>
+                            <!-- More info link -->
+                            <a id="item-more-info" href="#" target="_blank" rel="noopener noreferrer" class="btn-more-info hidden">
+                                <span>📚</span>
+                                <span data-translate="more_info">More Information</span>
+                            </a>
+                        </div>
+
+                        <!-- Synopsis/Description -->
+                        <div class="synopsis-section">
+                            <h2 data-translate="synopsis">Synopsis</h2>
+                            <p id="item-synopsis" class="synopsis-text"></p>
+                        </div>
+
+                        <!-- Related Items (Optional for future) -->
+                        <div class="related-section" id="relatedSection">
+                            <h2 data-translate="related">Related Items</h2>
+                            <div id="relatedItems" class="related-grid">
+                                <!-- Will be populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Tec'N'Cool Project</p>
+                <p class="footer-text">CEI & ISCAP | Politécnico do Porto</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <svg class="scroll-progress-ring" width="60" height="60">
+            <circle class="scroll-progress-ring-bg" cx="30" cy="30" r="26"></circle>
+            <circle class="scroll-progress-ring-circle" cx="30" cy="30" r="26"></circle>
+        </svg>
+        <span class="scroll-arrow-up">↑</span>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/details.js"></script>
+</body>
+</html>

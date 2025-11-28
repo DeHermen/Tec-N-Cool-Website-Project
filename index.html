@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tec'N'Cool - Bridge between academic knowledge and contemporary culture">
+    <title>Tec'N'Cool - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-link" aria-label="CEI Homepage">
+                        <img src="imgs/Logo_CEI.jpg" alt="CEI Logo" class="logo-cei">
+                    </a>
+                    <a href="index.html" class="logo-link" aria-label="Tec'N'Cool Homepage">
+                        <img src="imgs/logo_w_lettering_curto2.png" alt="Tec'N'Cool Logo" class="logo-main">
+                    </a>
+                    <a href="index.html" class="logo-link" aria-label="ISCAP P.Porto Homepage">
+                        <img src="imgs/LogoISCAPPP2.png" alt="ISCAP P.Porto Logo" class="logo-iscap">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links" id="navLinks">
+                    <a href="catalog.html?type=all&category=economy" class="nav-link" data-translate="economy">Economy & Culture</a>
+                    <a href="catalog.html?type=all&category=environment" class="nav-link" data-translate="environment">Environment & Culture</a>
+                    <a href="catalog.html?type=all&category=law" class="nav-link" data-translate="law">Law & Culture</a>
+                    <a href="#about" class="nav-link" data-translate="about">About</a>
+                </div>
+
+                <div class="nav-controls">
+                    <!-- Language Selector Dropdown -->
+                    <div class="language-dropdown" role="group" aria-label="Language selection">
+                        <button class="lang-dropdown-btn" id="langDropdownBtn" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon" id="currentFlag">
+                            <span class="lang-text" id="currentLang">EN</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="lang-dropdown-menu" id="langDropdownMenu" role="menu">
+                            <button class="lang-option" onclick="changeLanguage('en')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
+                                <span>English</span>
+                            </button>
+                            <button class="lang-option" onclick="changeLanguage('pt')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/pt.png" alt="Português" class="flag-icon">
+                                <span>Português</span>
+                            </button>
+                            <button class="lang-option" onclick="changeLanguage('fr')" role="menuitem">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+                                <span>Français</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+        <section class="hero" role="banner">
+            <div class="hero-background">
+                <div class="particles-container" id="particlesContainer"></div>
+                <div class="gradient-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="hero_title">
+                    <span class="title-line">Where Knowledge</span>
+                    <span class="title-line title-line-gradient">Meets Culture</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-translate="hero_subtitle">
+                    Explore over 250 films, series, and books connecting academic knowledge with contemporary culture
+                </p>
+                
+                <div class="hero-cta-group">
+                    <a href="#economy-section" class="cta-button cta-primary">
+                        <span data-translate="explore">Explore Now</span>
+                        <span class="cta-icon">→</span>
+                    </a>
+                    <a href="#about" class="cta-button cta-secondary">
+                        <span data-translate="about">About the Project</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Resources</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Free Access</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section - IMPROVED -->
+        <section class="categories" id="categories">
+            <div class="container">
+                <h2 class="section-title" data-translate="categories_title">Explore Our Collections</h2>
+                
+                <div class="categories-grid">
+                    <!-- Economy & Culture -->
+                    <article class="category-card economy-card" id="economy-section" data-aos="fade-up">
+                        <div class="card-gradient"></div>
+                        <div class="card-hover-effect"></div>
+                        <div class="card-shine"></div>
+                        <div class="card-header">
+                            <div class="card-icon-wrapper">
+                                <div class="icon-background economy-bg"></div>
+                                <img src="imgs/Economy_and_Culture.jpeg" alt="Economy icon" class="category-icon-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title" data-translate="economy">Economy & Culture</h3>
+                            <p class="card-description" data-translate="economy_desc">
+                                Media exploring economic topics in culture
+                            </p>
+                            <div class="card-links">
+                                <a href="catalog.html?type=films&category=economy" class="card-link">
+                                    <span class="link-icon">🎬</span>
+                                    <span data-translate="films">Films</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                                <a href="catalog.html?type=shows&category=economy" class="card-link">
+                                    <span class="link-icon">📺</span>
+                                    <span data-translate="shows">TV Shows</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                                <a href="catalog.html?type=books&category=economy" class="card-link">
+                                    <span class="link-icon">📚</span>
+                                    <span data-translate="literature">Literature</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Environment & Culture -->
+                    <article class="category-card environment-card" id="environment-section" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-gradient"></div>
+                        <div class="card-hover-effect"></div>
+                        <div class="card-shine"></div>
+                        <div class="card-header">
+                            <div class="card-icon-wrapper">
+                                <div class="icon-background environment-bg"></div>
+                                <img src="imgs/Ambiente_e_Cultura.jpeg" alt="Environment icon" class="category-icon-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title" data-translate="environment">Environment & Culture</h3>
+                            <p class="card-description" data-translate="environment_desc">
+                                Content addressing sustainability and environmental issues
+                            </p>
+                            <div class="card-links">
+                                <a href="catalog.html?type=films&category=environment" class="card-link">
+                                    <span class="link-icon">🎬</span>
+                                    <span data-translate="films">Films</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                                <a href="catalog.html?type=shows&category=environment" class="card-link">
+                                    <span class="link-icon">📺</span>
+                                    <span data-translate="shows">TV Shows</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                                <a href="catalog.html?type=books&category=environment" class="card-link">
+                                    <span class="link-icon">📚</span>
+                                    <span data-translate="literature">Literature</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Law & Culture -->
+                    <article class="category-card law-card" id="law-section" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-gradient"></div>
+                        <div class="card-hover-effect"></div>
+                        <div class="card-shine"></div>
+                        <div class="card-header">
+                            <div class="card-icon-wrapper">
+                                <div class="icon-background law-bg"></div>
+                                <img src="imgs/Law_And_Culture_img.jpg" alt="Law icon" class="category-icon-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title" data-translate="law">Law & Culture</h3>
+                            <p class="card-description" data-translate="law_desc">
+                                Legal and justice themes in cultural works
+                            </p>
+                            <div class="card-links">
+                                <a href="catalog.html?type=films&category=law" class="card-link">
+                                    <span class="link-icon">🎬</span>
+                                    <span data-translate="films">Films</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                                <a href="catalog.html?type=shows&category=law" class="card-link">
+                                    <span class="link-icon">📺</span>
+                                    <span data-translate="shows">TV Shows</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                                <a href="catalog.html?type=books&category=law" class="card-link">
+                                    <span class="link-icon">📚</span>
+                                    <span data-translate="literature">Literature</span>
+                                    <span class="link-arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <!-- Mission Statement -->
+                <div class="about-hero">
+                    <h2 class="about-main-title" data-translate="about_title">About Tec'N'Cool</h2>
+                    <p class="about-mission-text" data-translate="about_intro">
+                        The Tec'N'Cool project was born from the conviction that academic knowledge and contemporary culture should engage in a more open, accessible, and inspiring dialogue. Established in a business school, the project already brings together more than 250 films, series, and books in a freely accessible database, focused on essential topics such as economics, environmental sustainability, and law. In a constantly changing world, understanding these subjects from multiple perspectives - theoretical, practical, and cultural - is crucial for developing critical and innovative thinkers.
+                    </p>
+                </div>
+
+                <!-- Core Values Grid -->
+                <div class="about-values-grid">
+                    <!-- Rationale -->
+                    <div class="about-value-card" data-aos="fade-up">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">💡</div>
+                        </div>
+                        <h3 class="value-title" data-translate="rationale_title">The Rationale</h3>
+                        <p class="value-description" data-translate="rationale_text">
+                            The rationale behind Tec'N'Cool is based on the idea that cultural narratives uniquely capture social and economic complexities, offering insights that complement traditional academic approaches. By providing a qualified and continuously updated curation of content, the project aims to enrich students' education, support pedagogical innovation among teachers, and stimulate new lines of academic research.
+                        </p>
+                    </div>
+
+                    <!-- Objectives -->
+                    <div class="about-value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">🎯</div>
+                        </div>
+                        <h3 class="value-title" data-translate="objectives_title">Main Objectives</h3>
+                        <ul class="value-list">
+                            <li data-translate="objective_1">Encouraging autonomous discovery and critical reflection on the central issues of our time</li>
+                            <li data-translate="objective_2">Creating a bridge between theory and practice by linking academic concepts to contemporary cultural representations</li>
+                            <li data-translate="objective_3">Stimulating interdisciplinarity, showing how law, economics, and sustainability interact with other areas such as ethics, politics, and technology</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stakeholders Section - IMPROVED 2x2 LAYOUT -->
+                <div class="about-stakeholders">
+                    <h3 class="stakeholders-title" data-translate="benefits_title">Advantages for the Academic Community</h3>
+                    
+                    <div class="stakeholders-grid-improved">
+                        <!-- Students -->
+                        <div class="stakeholder-card-improved" data-aos="fade-up">
+                            <div class="stakeholder-number">01</div>
+                            <div class="stakeholder-header-improved">
+                                <span class="stakeholder-icon-improved">🎓</span>
+                                <h4 class="stakeholder-title-improved" data-translate="for_students">For Students</h4>
+                            </div>
+                            <p class="stakeholder-text-improved" data-translate="students_detailed">
+                                Tec'N'Cool offers students a unique opportunity to broaden their academic education in a more dynamic and creative way. By exploring selected films, series, and books, students can develop essential critical skills such as interdisciplinary analysis, interpretation of complex realities, and strategic thinking.
+                            </p>
+                            <div class="stakeholder-tags-improved">
+                                <span class="tag-improved" data-translate="tag_critical">Critical Thinking</span>
+                                <span class="tag-improved" data-translate="tag_creativity">Creativity</span>
+                            </div>
+                        </div>
+
+                        <!-- Teachers -->
+                        <div class="stakeholder-card-improved" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stakeholder-number">02</div>
+                            <div class="stakeholder-header-improved">
+                                <span class="stakeholder-icon-improved">👨‍🏫</span>
+                                <h4 class="stakeholder-title-improved" data-translate="for_teachers">For Teachers</h4>
+                            </div>
+                            <p class="stakeholder-text-improved" data-translate="teachers_detailed">
+                                For teachers, Tec'N'Cool is an innovative didactic tool that enables them to diversify teaching methodologies and make classes more interactive and appealing. The database allows the integration of contemporary cultural resources into curricular programs.
+                            </p>
+                            <div class="stakeholder-tags-improved">
+                                <span class="tag-improved" data-translate="tag_innovation">Innovation</span>
+                                <span class="tag-improved" data-translate="tag_engagement">Engagement</span>
+                            </div>
+                        </div>
+
+                        <!-- Researchers -->
+                        <div class="stakeholder-card-improved" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stakeholder-number">03</div>
+                            <div class="stakeholder-header-improved">
+                                <span class="stakeholder-icon-improved">🔬</span>
+                                <h4 class="stakeholder-title-improved" data-translate="for_researchers">For Researchers</h4>
+                            </div>
+                            <p class="stakeholder-text-improved" data-translate="researchers_detailed">
+                                The platform offers researchers a valuable collection for analyzing how topics such as economics, sustainability, and law are represented in popular culture. Tec'N'Cool paves the way for new lines of research on the influence of cultural narratives.
+                            </p>
+                            <div class="stakeholder-tags-improved">
+                                <span class="tag-improved" data-translate="tag_research">Research</span>
+                                <span class="tag-improved" data-translate="tag_analysis">Analysis</span>
+                            </div>
+                        </div>
+
+                        <!-- Companies -->
+                        <div class="stakeholder-card-improved" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stakeholder-number">04</div>
+                            <div class="stakeholder-header-improved">
+                                <span class="stakeholder-icon-improved">🏢</span>
+                                <h4 class="stakeholder-title-improved" data-translate="for_companies">For Companies</h4>
+                            </div>
+                            <p class="stakeholder-text-improved" data-translate="companies_detailed">
+                                Companies and other entities can benefit from Tec'N'Cool as a source of inspiration for staff training, social responsibility programs, or awareness initiatives. Through access to a curated selection of content that addresses crucial topics for contemporary management.
+                            </p>
+                            <div class="stakeholder-tags-improved">
+                                <span class="tag-improved" data-translate="tag_training">Training</span>
+                                <span class="tag-improved" data-translate="tag_csr">CSR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conclusion Banner -->
+                <div class="about-conclusion" data-aos="fade-up">
+                    <p class="conclusion-text" data-translate="conclusion_text">
+                        In summary, Tec'N'Cool aims to be a living space for the intersection of knowledge and culture, stimulating creativity, critical thinking, and the development of more conscious leaders prepared to face the challenges of a changing world.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Tec'N'Cool Project</p>
+                <p class="footer-text">CEI & ISCAP | Politécnico do Porto</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <svg class="scroll-progress-ring" width="60" height="60">
+            <circle class="scroll-progress-ring-bg" cx="30" cy="30" r="26"></circle>
+            <circle class="scroll-progress-ring-circle" cx="30" cy="30" r="26"></circle>
+        </svg>
+        <span class="scroll-arrow-up">↑</span>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
