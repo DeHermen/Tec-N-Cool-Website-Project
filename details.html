@@ -12,7 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header - Same as index.html -->
+    <!-- Animated Background Particles (NÃO MEXER!) -->
+    <div class="details-particles-background">
+        <div class="details-particles-container" id="detailsParticlesContainer"></div>
+    </div>
+
+    <!-- Header -->
     <header class="header" id="header" role="banner">
         <nav class="nav-container" role="navigation" aria-label="Main navigation">
             <div class="nav-content">
@@ -30,10 +35,10 @@
 
                 <!-- Desktop Navigation -->
                 <div class="nav-links" id="navLinks">
-                    <a href="index.html#economy-section" class="nav-link" data-translate="economy">Economy & Culture</a>
-                    <a href="index.html#environment-section" class="nav-link" data-translate="environment">Environment & Culture</a>
-                    <a href="index.html#law-section" class="nav-link" data-translate="law">Law & Culture</a>
-                    <a href="index.html#about" class="nav-link" data-translate="about">About</a>
+                    <a href="catalog.html?type=all&category=economy" class="nav-link">Economy & Culture</a>
+                    <a href="catalog.html?type=all&category=environment" class="nav-link">Environment & Culture</a>
+                    <a href="catalog.html?type=all&category=law" class="nav-link">Law & Culture</a>
+                    <a href="index.html#about" class="nav-link">About</a>
                 </div>
 
                 <div class="nav-controls">
@@ -72,138 +77,198 @@
     <!-- Main Content -->
     <main class="details-main">
         <div class="details-container">
-            <!-- Breadcrumbs -->
-            <nav class="breadcrumbs" aria-label="Breadcrumb">
-                <ol id="breadcrumbList">
-                    <li><a href="index.html" data-translate="home">Home</a></li>
-                    <li><a href="#" id="breadcrumb-category">Category</a></li>
-                    <li aria-current="page" id="breadcrumb-item">Loading...</li>
-                </ol>
-            </nav>
-
-            <!-- Back button -->
-            <button onclick="window.history.back()" class="back-button">
-                <span>←</span>
-                <span data-translate="back">Back</span>
-            </button>
+            
+            <!-- Top Navigation (PERFEITO - NÃO MEXER!) -->
+            <div class="top-navigation fade-in-element">
+                <button onclick="window.history.back()" class="back-button">
+                    <span class="back-icon">←</span>
+                    <span>Back to Catalog</span>
+                </button>
+                
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol id="breadcrumbList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html" id="breadcrumb-category">Catalog</a></li>
+                        <li aria-current="page" id="breadcrumb-item">Loading...</li>
+                    </ol>
+                </nav>
+            </div>
 
             <!-- Loading State -->
             <div id="loadingState" class="loading-state">
                 <div class="spinner"></div>
-                <p data-translate="loading">Loading...</p>
+                <p>Loading amazing content...</p>
             </div>
 
             <!-- Error State -->
             <div id="errorState" class="error-state hidden">
-                <h2 data-translate="error_title">Item not found</h2>
-                <p data-translate="error_message">The requested item could not be found.</p>
-                <a href="index.html" class="btn-primary">
-                    <span data-translate="back_home">Back to Home</span>
+                <div class="error-icon">😞</div>
+                <h2>Oops! Content not found</h2>
+                <p>The item you're looking for seems to have vanished into the digital void.</p>
+                <a href="catalog.html" class="btn-primary">
+                    <span>🔍</span>
+                    <span>Browse Catalog</span>
                 </a>
             </div>
 
             <!-- Details Content -->
             <div id="detailsContent" class="details-content hidden">
-                <div class="details-grid">
-                    <!-- Left Column: Poster/Cover -->
-                    <div class="details-poster">
-                        <img id="item-image" src="" alt="" class="poster-image">
+                
+                <!-- Main Content Area -->
+                <div class="content-wrapper fade-in-element">
+                    
+                    <!-- Left Column: Poster -->
+                    <div class="poster-column">
+                        <div class="poster-wrapper">
+                            <img id="item-image" src="" alt="" class="poster-image">
+                        </div>
                         
-                        <!-- Share buttons -->
+                        <!-- Share Section -->
                         <div class="share-section">
-                            <h3 data-translate="share">Share</h3>
+                            <h3>Share</h3>
                             <div class="share-buttons">
-                                <button class="share-btn" onclick="shareItem('facebook')" aria-label="Share on Facebook">
-                                    <span>📘</span>
+                                <button class="share-btn" onclick="shareItem('facebook')">
+                                    <span class="share-icon">📘</span>
                                     <span>Facebook</span>
                                 </button>
-                                <button class="share-btn" onclick="shareItem('twitter')" aria-label="Share on Twitter">
-                                    <span>🐦</span>
+                                <button class="share-btn" onclick="shareItem('twitter')">
+                                    <span class="share-icon">🐦</span>
                                     <span>Twitter</span>
                                 </button>
-                                <button class="share-btn" onclick="copyLink()" aria-label="Copy link">
-                                    <span>🔗</span>
-                                    <span data-translate="copy_link">Copy Link</span>
+                                <button class="share-btn" onclick="shareItem('linkedin')">
+                                    <span class="share-icon">💼</span>
+                                    <span>LinkedIn</span>
+                                </button>
+                                <button class="share-btn" onclick="copyLink()">
+                                    <span class="share-icon">🔗</span>
+                                    <span>Copy Link</span>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right Column: Information -->
-                    <div class="details-info">
-                        <h1 id="item-title" class="details-title"></h1>
+                    <!-- Right Column: Info -->
+                    <div class="info-column">
+                        
+                        <!-- Title & Meta -->
+                        <div class="title-section">
+                            <div class="category-badge" id="categoryBadge">
+                                <span class="badge-icon"></span>
+                                <span class="badge-text"></span>
+                            </div>
+                            
+                            <h1 id="item-title" class="item-title"></h1>
+                            
+                            <div class="meta-row" id="metaRow">
+                                <span class="meta-item" id="metaYear"></span>
+                                <span class="meta-divider">•</span>
+                                <span class="meta-item" id="metaType"></span>
+                                <span class="meta-divider">•</span>
+                                <span class="meta-item" id="metaGenre"></span>
+                            </div>
+                        </div>
 
-                        <!-- For Films/Shows -->
-                        <div id="filmShowInfo" class="info-section hidden">
-                            <div class="info-row">
-                                <span class="info-label" data-translate="director">Director:</span>
-                                <span id="item-director" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label" data-translate="release_date">Release Date:</span>
-                                <span id="item-release" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label" data-translate="genre">Genre:</span>
-                                <span id="item-genre" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label" data-translate="cast">Cast:</span>
-                                <span id="item-cast" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label" data-translate="production">Production:</span>
-                                <span id="item-production" class="info-value"></span>
-                            </div>
-                            <!-- Trailer link -->
-                            <a id="item-trailer" href="#" target="_blank" rel="noopener noreferrer" class="btn-trailer hidden">
-                                <span>🎬</span>
-                                <span data-translate="watch_trailer">Watch Trailer</span>
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <a id="item-trailer" href="#" target="_blank" rel="noopener noreferrer" class="btn-action btn-trailer hidden">
+                                <span class="btn-icon">🎬</span>
+                                <span>Watch Trailer</span>
+                            </a>
+                            <a id="item-more-info" href="#" target="_blank" rel="noopener noreferrer" class="btn-action btn-info hidden">
+                                <span class="btn-icon">📚</span>
+                                <span>More Info</span>
                             </a>
                         </div>
 
-                        <!-- For Books -->
-                        <div id="bookInfo" class="info-section hidden">
-                            <div class="info-row">
-                                <span class="info-label" data-translate="author">Author:</span>
-                                <span id="item-author" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label" data-translate="publication_year">Publication Year:</span>
-                                <span id="item-publication-year" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label" data-translate="language">Language:</span>
-                                <span id="item-language" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label" data-translate="publisher">Publisher:</span>
-                                <span id="item-publisher" class="info-value"></span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">ISBN:</span>
-                                <span id="item-isbn" class="info-value"></span>
-                            </div>
-                            <!-- More info link -->
-                            <a id="item-more-info" href="#" target="_blank" rel="noopener noreferrer" class="btn-more-info hidden">
-                                <span>📚</span>
-                                <span data-translate="more_info">More Information</span>
-                            </a>
-                        </div>
-
-                        <!-- Synopsis/Description -->
+                        <!-- Synopsis -->
                         <div class="synopsis-section">
-                            <h2 data-translate="synopsis">Synopsis</h2>
+                            <h2 class="section-title">
+                                <span class="title-icon">📖</span>
+                                <span>Synopsis</span>
+                            </h2>
                             <p id="item-synopsis" class="synopsis-text"></p>
                         </div>
 
-                        <!-- Related Items (Optional for future) -->
-                        <div class="related-section" id="relatedSection">
-                            <h2 data-translate="related">Related Items</h2>
-                            <div id="relatedItems" class="related-grid">
-                                <!-- Will be populated by JS -->
+                        <!-- Production Details (Films/Shows) -->
+                        <div id="filmShowDetails" class="details-section hidden">
+                            <h2 class="section-title">
+                                <span class="title-icon">🎭</span>
+                                <span>Production Details</span>
+                            </h2>
+                            <div class="details-grid">
+                                <div class="detail-row">
+                                    <span class="detail-label">Director</span>
+                                    <span id="item-director" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Cast</span>
+                                    <span id="item-cast" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Production</span>
+                                    <span id="item-production" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Release Date</span>
+                                    <span id="item-release" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Genre</span>
+                                    <span id="item-genre" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Distribution</span>
+                                    <span id="item-distribution" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Screenwriting</span>
+                                    <span id="item-screenwriting" class="detail-value"></span>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Book Details -->
+                        <div id="bookDetails" class="details-section hidden">
+                            <h2 class="section-title">
+                                <span class="title-icon">✍️</span>
+                                <span>Book Details</span>
+                            </h2>
+                            <div class="details-grid">
+                                <div class="detail-row">
+                                    <span class="detail-label">Author</span>
+                                    <span id="item-author" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Publisher</span>
+                                    <span id="item-publisher" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Publication Year</span>
+                                    <span id="item-publication-year" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Language</span>
+                                    <span id="item-language" class="detail-value"></span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">ISBN</span>
+                                    <span id="item-isbn" class="detail-value"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Items Section (MANTÉM ESTE!) -->
+                <div class="related-section fade-in-element" id="relatedSection" style="animation-delay: 0.3s">
+                    <div class="section-header">
+                        <h2 class="section-title-large">
+                            <span class="title-icon-large">🎯</span>
+                            <span>You Might Also Like</span>
+                        </h2>
+                    </div>
+                    <div id="relatedItems" class="related-grid">
+                        <!-- Populated by JS -->
                     </div>
                 </div>
             </div>
