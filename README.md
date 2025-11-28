@@ -626,7 +626,7 @@ Developed by: [Guilherme Marques]
 Role: Full-Stack Website Developer
 Institution: ISCAP - Instituto Superior de Contabilidade e Administração do Porto
 Contact: [guilherme.jcmarques@gmail.com]
-GitHub: [github.com/GuiJC-Marques]
+GitHub: [github.com/GJCMarques]
 LinkedIn: [linkedin.com/in/guilherme-josé-costa-marques]
 
 ---
